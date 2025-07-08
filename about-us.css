@@ -1,0 +1,58 @@
+body.about-page {
+  background-color: #d2b48c; /* kafe e hapur */
+  font-family: Arial, sans-serif;
+  padding: 50px;
+  color: #f5f5dc; /* ngjyrë krem për tekstin */
+}
+
+.about-box {
+  background-color: #C19A6B; /* sfond më i errët për kontrast */
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.about-box h1 {
+  color: #f5f5dc; /* titulli ngjyrë krem */
+}
+
+.about-box p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: #f5f5dc; /* paragrafët ngjyrë krem */
+}
+
+/* Nëse vendos foto më vonë, kjo e rrotullon */
+.about-box img {
+  width: 250px;
+  margin: 20px 0;
+  border-radius: 8px;
+  transition: transform 0.5s ease;
+}
+
+.about-box img:hover {
+  transform: rotate(5deg) scale(1.05);
+}
+
+/* Stilizo butonin */
+.btn {
+  display: inline-block;
+  background-color: #8B4513; /* ngjyrë kafe */
+  color: #fff8dc; /* ngjyrë krem për tekstin */
+  text-decoration: none;
+  border: none;
+  padding: 14px 28px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #5C3317; /* më e errët */
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}

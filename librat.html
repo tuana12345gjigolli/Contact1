@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8" />
+  <title>Biblioteka</title>
+  <link rel="stylesheet" href="librat.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="back-link">⬅ Kthehu mbrapa</a>
+      <ul>
+        <li onclick="showCategory('children')">Fëmijë</li>
+        <li onclick="showCategory('teens')">Adoleshentë</li>
+        <li onclick="showCategory('adults')">Të Rritur</li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="books-grid" id="booksGrid"></div>
+    <p id="quote"></p>
+  </main>
+
+  <footer>
+    &copy; 2025 Biblioteka. Të gjitha të drejtat e rezervuara.
+  </footer>
+
+  <script src="librat.js"></script>
+</body>
+</html>

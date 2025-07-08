@@ -1,0 +1,139 @@
+/* Sfondi dhe stili i përgjithshëm */
+body.books-page {
+  background-color: #d2b48c; /* kafe e hapur */
+  font-family: Arial, sans-serif;
+  padding: 50px;
+}
+
+.books-container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  position: relative; /* që back-link të lidhet me container */
+}
+
+h1 {
+  color: #4B2E2E;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #4B2E2E;
+  margin-top: 50px;
+}
+
+/* Rreshti i librave */
+.books-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+/* Kuti për çdo libër */
+.book {
+  background-color: #f5f5dc; /* kufizim krem */
+  border-radius: 8px;
+  padding: 20px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+/* FOTO — vetëm fotoja rrotullohet */
+.book img {
+  max-width: 100%;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+.book img:hover {
+  transform: rotate(2deg) scale(1.05);
+}
+
+/* Titulli i librit */
+.book h3 {
+  margin: 10px 0 5px;
+  color: #4B2E2E;
+}
+
+/* Çmimi i librit */
+.price {
+  color: #4B2E2E;   /* ngjyrë kafe */
+  font-weight: bold;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* Butoni Shto në Shportë */
+.btn {
+  display: inline-block;
+  background-color: #8B4513; /* kafe */
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #5C3317;
+  transform: scale(1.1);
+}
+
+/* Teksti "Libri është shtuar në shportë!" */
+.added-text {
+  opacity: 0;
+  background-color: #4B2E2E;
+  color: #f5f5dc;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.added-text.show {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* BACK LINK */
+.back-link {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #fdf5e6; /* krem */
+  color: #5c4033;
+  padding: 8px 14px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  border: 1px solid #d2b48c;
+  transition: background-color 0.3s, color 0.3s;
+  z-index: 1000;
+}
+
+.back-link:hover {
+  background-color: #f2e6d9;
+  color: #3e2c23;
+}
+
+/* FOOTER */
+footer {
+  background-color: #d4aa73;  /* kafe e thellë */
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 50px;
+}
